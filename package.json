@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manishahsavari/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manishahsavari/project/issues"
+  },
+  "homepage": "https://github.com/Manishahsavari/project#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "animate.css": "^4.1.1",
+    "bootstrap-v4-rtl": "^4.6.0-3",
+    "font-awesome": "^4.7.0",
+    "vazir-font": "^30.1.0"
+  }
+}
