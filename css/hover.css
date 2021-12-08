@@ -1,0 +1,24 @@
+.hover:hover{
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #9e2358;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+nav{
+    max-height: 100px;
+}
+.activee{
+    border-collapse: collapse;
+    background: #9e2358;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
