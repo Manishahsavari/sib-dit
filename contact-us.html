@@ -19,6 +19,7 @@
   <!--    link fonts-->
   <link rel="stylesheet" href="node_modules/vazir-font/dist/font-face.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link id="pagestyle" href="./assets/css/material-kit.css?v=3.0.0" rel="stylesheet" />
 
   <!--    link css-->
   <link rel="stylesheet" href="css/font.css">
@@ -128,141 +129,132 @@
 <body class="about-us bg-gray-200">
 
 <!-- Navbar Transparent -->
-<nav        class="navbar navbar-expand-lg navbar-light  z-index-3 py-3 ">
-  <div class="container">
-    <nav class="navbar navbar-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/apple-touch-icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-          مجله علمی سیب دایت
-
-        </a>
-      </div>
-    </nav>
-
-
-    <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container position-sticky z-index-sticky top-0"><div class="row"><div class="col-12">
+  <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand font-weight-bolder ms-sm-3" href="https://demos.creative-tim.com/material-kit/index" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <img style="width: 30px" src="img/apple-touch-icon.png" alt="">
+        مجله علمی سیب دایت
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon mt-2">
-        <span class="navbar-toggler-bar bar1 text-dark"></span>
+        <span class="navbar-toggler-bar bar1"></span>
         <span class="navbar-toggler-bar bar2"></span>
         <span class="navbar-toggler-bar bar3"></span>
       </span>
-    </button>
-    <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-      <ul class="navbar-nav navbar-nav-hover mx-auto">
-        <li class="nav-item mx-2">
-          <button class="btn  hover activee  " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" role="button" href="">
-              خانه
-              <br> <br>
-            </a>                        </button>
-        </li>
-        <li>
+      </button>
+      <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+          <i class="nav-link">
+            <a href="#">خانه</a>
+          </i>
+          <i class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" class="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+              رژیم درمانی
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+              <div class="d-none d-lg-block">
 
-          <div class="dropdown  ">
-            <button class="btn  dropdown-toggle hover  animate__slideOutDown    " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" role="button" href="">
-                رژیم درمانی
-              </a>                        </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">غذا درمانی</a></li>
-              <li><a class="dropdown-item" href="#">معرفی رژیم </a></li>
-              <li><a class="dropdown-item" href="#">معرفی رژیم خوب</a></li>
-              <li><a class="dropdown-item" href="#">جلوگیری از عوارض رژیم</a></li>
-            </ul>
-          </div>
-        </li>
+                <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+                  <span>غذا درمانی</span>
+                </a>
+                <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم </span>
+                </a>
+                <a href="./pages/author.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم خوب</span>
+                </a>
 
-        <li class="nav-item mx-2">
-        <li>
+              </div>
 
-          <div class="dropdown">
-            <button class="btn bg-gradient-white dropdown-toggle hover animate__slideOutDown" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" role="button" href="">
-                مزاج سنجی
-              </a>                        </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">مزاج های من </a></li>
-              <li><a class="dropdown-item" href="#">مزاج میوه ها</a></li>
-              <li><a class="dropdown-item" href="#">مزاج رنگ ها</a></li>
-              <li><a class="dropdown-item" href="#">مزاج شناسی و طب نوین</a></li>
-            </ul>
-          </div>
-        </li>
 
-        <li class="nav-item dropdown dropdown-hover mx-2">
-        <li>
 
-          <div class="dropdown">
-            <button class="btn bg-gradient-white dropdown-toggle hover animate__slideOutDown" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" role="button" href="">
-                مادر و کودک                            </a>                        </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item " href="#">بارداری</a></li>
-              <li><a class="dropdown-item" href="#">شیردهی</a></li>
-              <li><a class="dropdown-item" href="#">رژیم کودکان </a></li>
-              <li><a class="dropdown-item" href="#">رژیم و مدرسه </a></li>
-              <li><a class="dropdown-item" href="#">رژیم و کنکور </a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item dropdown dropdown-hover mx-2">
-        <li>
+            </div>
+          </i>
+          <i class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" class="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+              مزاج سنجی
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+              <div class="d-none d-lg-block">
 
-          <div class="dropdown">
-            <button class="btn bg-gradient-white dropdown-toggle hover animate__slideOutDown" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" role="button" href="">
-                سبک زندگی
-              </a>                        </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">1</a></li>
-              <li><a class="dropdown-item" href="#">2</a></li>
-              <li><a class="dropdown-item" href="#">3</a></li>
-              <li><a class="dropdown-item" href="#">4</a></li>
-              <li><a class="dropdown-item" href="#">5</a></li>
-              <li><a class="dropdown-item" href="#">6</a></li>
-              <li><a class="dropdown-item" href="#">7</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item dropdown dropdown-hover mx-2">
-        <li>
+                <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+                  <span>غذا درمانی</span>
+                </a>
+                <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم </span>
+                </a>
+                <a href="./pages/author.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم خوب</span>
+                </a>
 
-          <div class="dropdown">
-            <button class="btn bg-gradient-white dropdown-toggle hover animate__slideOutDown" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center text-dark" role="button" href="">
-                سبک زندگی
-              </a>                        </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">1</a></li>
-              <li><a class="dropdown-item" href="#">2</a></li>
-              <li><a class="dropdown-item" href="#">3</a></li>
-              <li><a class="dropdown-item" href="#">4</a></li>
-              <li><a class="dropdown-item" href="#">5</a></li>
-              <li><a class="dropdown-item" href="#">6</a></li>
-              <li><a class="dropdown-item" href="#">7</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+              </div>
 
-      <div class="container">
-        <form class="d-flex">
-          <input class="form-control me-2 sea" type="جستجو" placeholder="جستجو" aria-label="Search" style="width: 200px;">
-          <button class="btn btn-outline-success" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
-        </form>
+
+
+            </div>
+          </i>
+          <i class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" class="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+              مادر و کودک
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+              <div class="d-none d-lg-block">
+
+                <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+                  <span>غذا درمانی</span>
+                </a>
+                <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم </span>
+                </a>
+                <a href="./pages/author.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم خوب</span>
+                </a>
+
+              </div>
+
+
+
+            </div>
+          </i>
+          <i class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+              سبک زندگی
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+              <div class="d-none d-lg-block">
+
+                <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+                  <span>غذا درمانی</span>
+                </a>
+                <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم </span>
+                </a>
+                <a href="./pages/author.html" class="dropdown-item border-radius-md">
+                  <span>معرفی رژیم خوب</span>
+                </a>
+
+              </div>
+
+
+
+            </div>
+          </i>
+
+        </ul>
       </div>
-
-
     </div>
-  </div>
-</nav>
-<div class="header" >
+  </nav>
+  <!-- End Navbar -->
+</div></div></div>
 
   <div class="d">
 
+    <br><br>
 
   <section class="py-3">
     <div class="container">
